@@ -21,6 +21,11 @@
 
 
 // HOISTING 
+    // in variable hoisting 
+    console.log(x);
+    var x=0;
+    // output will be undefined, because of hoisting the variable was declared before console.log
+    // but in case of functions its a little different  
     // javascript moves your function and variable declaration at the top of the code this is called hoisting
     // LET IS ALSO HOISTED BUT IN THE TEMPORAL DEAD ZONE
 
