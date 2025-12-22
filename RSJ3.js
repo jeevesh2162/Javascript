@@ -54,3 +54,52 @@ var x = 20;
 x();
 
 // OUTPUT : undefined
+
+
+
+// PARAMS AND THE ARGUMENT (DIFFERENCE);
+function x1(x){ //params
+    console.log(x);
+    // var x=20;
+}
+x1(3); //argument
+
+
+
+
+// SPREAD AND REST OPERATOR
+//it must be the last parameter
+function spread(...arr){ //rest
+    return arr[0]*arr[1];
+}
+
+var array= [12];
+spread(...array);//spread
+// Output: NaN — because arr becomes [12], so arr[0] = 12 and arr[1] = undefined, and 12 * undefined results in NaN.
+
+
+// CALLBACK FUNCTION
+// function that is used inside other function as a parameter 
+// eg used in reduce map filter and event listners etc
+
+// ARRAOW FUNCTION 
+// const ARR=()=>{};
+// difference between normal arrow function for interview
+    // 1. syntax
+    // 2. return - arrow function donot need to return if there are no brackets
+    // 3. // function fn(){
+        //     console.log(arguments);
+        // }
+
+        // fn(1,2,3)
+        // it will give an output but similarly if we do it with arrow function it will give error
+    // 4. this keyword
+        // const user = {
+        //  username ="jeevesh";
+        //  rc1: ()=>{
+        //      console.log(this.username); // this is pointing to the global object
+        // }
+        //  rc2(){
+        //      console.log(this.username); // this is pointing to parent obj that is user
+        //  }
+        // }
