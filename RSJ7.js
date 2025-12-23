@@ -160,3 +160,23 @@ multiply(); //20
 multiply(value); //20
 multiply(value); //40
 
+
+
+
+
+
+// Pass by value (primitive)
+let a = 10;
+function change(x) {
+    x = 20;
+}
+change(a);
+console.log(a); // 10
+
+// Pass by reference (object)
+let obj = { value: 10 };
+function changeObj(o) {
+    o.value = 20;
+}
+changeObj(obj);
+console.log(obj.value); // 20
