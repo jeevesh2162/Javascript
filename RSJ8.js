@@ -56,7 +56,7 @@ obj.greet(); // Jeevesh
 // 👉 Key rule: Normal functions get their own this; arrow functions borrow this from the surrounding scope.
 
 
-
+  
 // settimeout confusing part 
 // 'this' Keyword in Javascript (Implicit Binding)
 // Question 3 - What is the Output?
